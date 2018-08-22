@@ -1,0 +1,7 @@
+---
+
+- name:
+  aptly_repo:
+    name: test-no-options
+    state: present
+
