@@ -1,7 +1,10 @@
 ---
 
-- name:
-  aptly_repo:
-    name: test-no-options
-    state: present
+- name: test repository creation
+  import_tasks: test-create.yml
 
+- name: test repository deletion
+  import_tasks: test-delete.yml
+
+- name: test repository editing
+  import_tasks: test-edit.yml

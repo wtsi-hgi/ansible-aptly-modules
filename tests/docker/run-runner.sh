@@ -11,4 +11,4 @@ for host in ${hosts}; do
     /opt/wait-for-it.sh "${host}:22"
 done
 
-ansible-playbook -i inventory.ini test.yml
+ansible-playbook -i inventory.ini -v test.yml
